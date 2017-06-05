@@ -18,5 +18,5 @@ Follow below steps to install:
 
 3. Modify lib/pkgIndex.tcl, add http::markdown info
 
-    package ifneeded httpd::markdown 1.0 \[list source \[file join [list $dir] markdown.tcl\]\]
+    package ifneeded httpd::markdown 1.0 \\[list source \\[file join [list $dir] markdown.tcl\\]\\]
 
