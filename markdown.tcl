@@ -31,8 +31,8 @@ Mtype_Add $Doctools(suffix) text/x-markdown
 proc Doc_text/x-markdown {path suffix sock} {
     set in [open $path]
     set md [read $in]
-    set data [encoding convertto utf-8 [::Markdown::convert $md]]
     close $in
+    set data [encoding convertto utf-8 [::Markdown::convert $md]]
 
     Httpd_ReturnData $sock "text/html;charset=utf-8" $data
     return
